@@ -1,0 +1,38 @@
+<div class="client">
+    <ul class="clearfix">
+        <li ng-repeat="se in special" >
+            <a href="#">
+                    <img ng-src="{{se.image}}">
+                    <p class="cl_title">{{se.title}}</p>
+                </a>
+        </li>
+    </ul>
+</div>
+
+<style >
+.client {
+    background: #fff;
+}
+.client ul{
+    display: flex;
+}
+.client li {
+    margin: 2% 0 2% 2%;
+   flex: 1;
+}
+.client li:last-child{
+    margin-right: 2%;
+}
+.client li a{
+    width: 100%;
+}
+.client li img {
+    display: block;
+     width: 100%;
+}
+
+.client .cl_title {
+    text-align: center;
+    font-size: 14px;
+}
+</style>

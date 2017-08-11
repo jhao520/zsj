@@ -1,0 +1,1 @@
+var app = angular.module('zushuApp',['ui.router','route','service','filter','directive','controller']);

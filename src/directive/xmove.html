@@ -1,0 +1,67 @@
+<div class="move">
+    <div class="mo_content">
+        <p class="mo_con">-- 限时特惠距活动结束仅剩 --</p>
+        <div class="mo_time">
+            <span class="time time1">{{t1}}</span>
+            <span class="time time2">{{t2}}</span>
+            <span class="time3">时</span>
+            <span class="time time4">{{t3}}</span>
+            <span class="time time5">{{t4}}</span>
+            <span class="time6">分</span>
+            <span class="time time7">{{t5}}</span>
+            <span class="time time8">{{t6}}</span>
+            <span class="time9">秒</span>
+            <span class="time time10">{{t7}}</span>
+            <span class="time time11">{{t8}}</span>
+        </div>
+    </div>
+    <div class="fmove">
+        <ul class="bomove clearfix" v-shift="">
+            <li ng-repeat="lia in liactive" >
+                <a ng-href="#!/detail/{{lia.item_id}}">
+                        <img ng-src="{{lia.image}}">
+                        <p class="mo_price">{{lia.discountPrice}} <span class="old_price">{{lia.price}}</span></p>
+                        <button class="mo_buy">立即抢购</button>
+                    </a>
+            </li>
+        </ul>
+    </div>
+</div>
+<style>
+.move {
+    width: 100%;
+    background: #fff;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+.move .fmove {
+    height: 230px;
+    position: relative;
+}
+
+.bomove {
+    position: absolute;
+    height: 100%;
+    left: 0;
+}
+
+.move .mo_content {
+    height: 54px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+span {
+    font-size: 14px;
+}
+
+.move div .time {
+    display: inline-block;
+    width: 14px;
+    height: 18px;
+    background: #000;
+    color: #fff;
+    line-height: 18px;
+}
+</style>

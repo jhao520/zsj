@@ -1,0 +1,91 @@
+<div class="assembly move">
+    <img src="https://s10.mogucdn.com/mlcdn/c45406/170523_3588j3005fhc2d8f1icgijbgg23gk_740x128.jpg_750x999.v1c7E.70.webp" class="as_hea">
+    <div class="assembly1">
+        <img class="big_img" ng-src="{{well1Img}}">
+        <div class="fmove">
+            <ul class="bomove clearfix">
+                <li ng-repeat="a1 in aswell1">
+                    <a ng-href="#!/detail/+a1.signGoodsId">
+                            <img ng-src="{{a1.image}}">
+                            <p class="astitle">{{a1.title}}</p>
+                            <p class="mo_price">{{a1.price}}</p>
+                        </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="assembly2">
+        <img class="big_img" ng-src="{{well2Img}}">
+        <div class="fmove">
+            <ul class="bomove clearfix">
+                <li ng-repeat="a2 in aswell2">
+                    <a ng-href="#/detail/a2.signGoodsId">
+                            <img ng-src="{{a2.image}}">
+                            <p class="astitle">{{a2.title}}</p>
+                            <p class="mo_price">{{a2.price}}</p>
+                        </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="assembly3">
+        <img class="big_img" ng-src="{{well3Img}}">
+        <div class="fmove">
+            <ul class="bomove clearfix">
+                <li ng-repeat="a3 in aswell3">
+                    <a ng-href="#/detail/a3.signGoodsId">
+                            <img ng-src="{{a3.image}}">
+                            <p class="astitle">{{a3.title}}</p>
+                            <p class="mo_price">{{a3.price}}</p>
+                        </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="asmore">
+        <a href="#">加载更多 ＞</a>
+    </div>
+</div>
+<style>
+.assembly div {
+    background: #fff;
+}
+.assembly2,
+.assembly3 {
+    margin-top: 10px;
+}
+
+.big_img {
+    width: 100%;
+}
+
+.as_hea {
+    width: 100%;
+}
+
+.assembly p {
+    color: #f36;
+}
+
+.asmore {
+    border-top: 1px solid #eee;
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+}
+
+.asmore a {
+    color: #f36;
+    font-size: 12px;
+}
+
+.astitle {
+    font-size: 12px;
+    color: #333;
+    height: 14px;
+    line-height: 14px;
+    overflow: hidden;
+    white-space: normal;
+    text-overflow: ellipsis;
+}
+</style>
